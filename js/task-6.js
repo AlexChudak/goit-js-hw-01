@@ -1,11 +1,17 @@
 let input;
 let total = 0;
 
-input = prompt('Введите число, оно будет добавлено к следующему');
+input = prompt('Введите число');
 
-total += input;
-if (input >= 1) {
-} else input === null;
-{
-  alert(`Общая сумма чисел равна ${total}`);
+while (true) {
+  if (Number(input) > 1) {
+    input = Number(input);
+    total += input;
+    console.log(input);
+  }
+  if (input === null) {
+    alert(`Сумма ровна ${total}`);
+    break;
+  }
+  input = prompt('Введите число');
 }
