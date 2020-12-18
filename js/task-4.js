@@ -4,15 +4,18 @@ const pricePerDroid = 300;
 let totalPrice;
 let cash;
 
+let message;
+
 const request = prompt('Сколько дроидов Вы хотите купить?');
 
 totalPrice = request * pricePerDroid;
 cash = credits - totalPrice;
 
 if (totalPrice > credits) {
-  alert('Недостаточно средств на счету!');
+  message = 'Недостаточно средств на счету!';
 } else if (request === null) {
-  alert('Отменено пользователем!');
+  message = 'Отменено пользователем!';
 } else {
-  alert(`Вы купили ${request} дроидов, на счету осталось ${cash} кредитов.`);
+  message = `Вы купили ${request} дроидов, на счету осталось ${cash} кредитов.`;
 }
+alert(message);

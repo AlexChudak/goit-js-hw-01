@@ -3,8 +3,8 @@ let total = 0;
 
 input = prompt('Введите число');
 
-while (true) {
-  if (Number(input) > 1) {
+while (Number) {
+  if (Number(input) > 0) {
     input = Number(input);
     total += input;
     console.log(input);
